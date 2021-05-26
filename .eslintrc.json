@@ -17,6 +17,16 @@
   },
   "plugins": ["react"],
   "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
     "react/prop-types": "off",
     "no-console": 1,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
