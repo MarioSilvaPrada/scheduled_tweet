@@ -3,7 +3,7 @@ import * as S from './style';
 
 const App: FC = () => (
   <S.Container>
-    <h1>Home</h1>
+    <h1>Home!!!</h1>
   </S.Container>
 );
 
