@@ -30,6 +30,7 @@
       }
     ],
     "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
     "no-console": 1,
     "react/jsx-filename-extension": [
       1,

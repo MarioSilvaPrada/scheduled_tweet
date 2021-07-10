@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import Input from '../Input';
 
 interface IProps {
   children: string;
@@ -7,7 +8,7 @@ interface IProps {
 
 const Form: FC<IProps> = ({ children, onClick }) => (
   <div>
-    <h1>Form</h1>
+    <Input placeholder="tweet" />
   </div>
 );
 

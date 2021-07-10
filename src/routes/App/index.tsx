@@ -1,7 +1,9 @@
 import React, { FC, useState } from 'react';
 import Button from '../../components/Button';
 import Modal from '../../components/Modal';
+import Form from '../../components/Form';
 import './style.css';
+import { GrClose } from 'react-icons/gr';
 
 const App: FC = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -13,11 +15,14 @@ const App: FC = () => {
           <Button onClick={() => setIsModalVisible(true)}>New tweet</Button>
         </div>
       </div>
-      {
-        <Modal isVisible={isModalVisible}>
-          <h1>Teste</h1>
-        </Modal>
-      }
+      <Modal isVisible={isModalVisible}>
+        <div className="modal-content">
+          <button type="button" onClick={() => setIsModalVisible(false)}>
+            <GrClose />
+          </button>
+          <Form />
+        </div>
+      </Modal>
     </>
   );
 };

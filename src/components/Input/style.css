@@ -1,0 +1,7 @@
+.input--container {
+  background: var(--secColor);
+  border: 1px solid var(--mainColor);
+  border-radius: 0.4rem;
+  padding: 0.7rem 1rem;
+  min-width: 25rem;
+}

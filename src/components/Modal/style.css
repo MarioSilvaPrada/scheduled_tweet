@@ -13,4 +13,5 @@
 .modal--container {
   background-color: white;
   padding: 2rem;
+  border-radius: var(--borderRadius);
 }

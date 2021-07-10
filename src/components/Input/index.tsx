@@ -1,14 +1,10 @@
 import React, { FC } from 'react';
+import './style.css';
 
-interface IProps {
-  children: string;
-  onClick: () => void;
-}
+interface IProps {}
 
-const Input: FC<IProps> = ({ children, onClick }) => (
-  <div>
-    <h1>Input</h1>
-  </div>
+const Input: FC<IProps> = ({ ...props }) => (
+  <input {...props} className="input--container" />
 );
 
 export default Input;
