@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-import * as S from './style';
+import './style.css';
 
 const Page1: FC = () => (
-  <S.Wrapper>
+  <div>
     <h1>Page 1</h1>
-  </S.Wrapper>
+  </div>
 );
 
 export default Page1;

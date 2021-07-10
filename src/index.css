@@ -1,3 +1,16 @@
+:root {
+  --mainColor: #00acee;
+  --secColor: #dbe6fd;
+  --background: #334257;
+  --maxWidth: 50rem;
+  --sizeXS: 0.7rem;
+  --sizeS: 0.9rem;
+  --sizeM: 1rem;
+  --sizeL: 1.2rem;
+  --sizeXL: 2.2rem;
+  --borderRadius: 0.3rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +24,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  background: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,4 +32,9 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button,
+input {
+  font-family: 'Montserrat', sans-serif;
 }

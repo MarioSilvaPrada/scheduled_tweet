@@ -1,0 +1,15 @@
+.main-container {
+}
+
+.main-container > h1 {
+  text-align: center;
+  margin: 2rem 0.5rem;
+}
+
+.main-container--wrapper {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  background: var(--secColor);
+  padding: 2rem;
+  border-radius: var(--borderRadius);
+}

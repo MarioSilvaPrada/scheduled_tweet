@@ -6,7 +6,8 @@
   "extends": ["plugin:react/recommended", "airbnb"],
   "globals": {
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "SharedArrayBuffer": "readonly",
+    "JSX": true
   },
   "parser": "babel-eslint",
   "parserOptions": {
@@ -30,7 +31,10 @@
     ],
     "react/prop-types": "off",
     "no-console": 1,
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ]
   },
   "settings": {
     "import/resolver": {
