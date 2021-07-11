@@ -20,7 +20,7 @@
   align-items: flex-end;
 }
 
-.modal-content button {
+.modal-content .close-btn {
   background: none;
   border: none;
   cursor: pointer;

@@ -17,7 +17,7 @@ const App: FC = () => {
       </div>
       <Modal isVisible={isModalVisible}>
         <div className="modal-content">
-          <button type="button" onClick={() => setIsModalVisible(false)}>
+          <button type="button" className="close-btn" onClick={() => setIsModalVisible(false)}>
             <GrClose />
           </button>
           <Form />
