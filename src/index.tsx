@@ -6,7 +6,6 @@ import './index.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import App from './routes/App';
 // Pages
-import Scheduled from './routes/Scheduled';
 import PageNotFound from './routes/PageNotFound';
 
 // Components
@@ -16,7 +15,6 @@ const root = (
   <Router>
     <Switch>
       <Route exact path="/" component={App} />
-      <Route exact path="/next" component={Scheduled} />
       <Route path="*" component={PageNotFound} />
     </Switch>
   </Router>

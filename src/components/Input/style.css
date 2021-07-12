@@ -4,5 +4,14 @@
   border-radius: 0.4rem;
   padding: 0.7rem 1rem;
   min-width: 25rem;
-  margin-bottom: 1.5rem;
+}
+
+.input-wrapper {
+  margin-bottom: 1rem;
+}
+
+.input-wrapper--error {
+  color: red;
+  font-size: var(--sizeXS);
+  margin-top: 0.3rem;
 }

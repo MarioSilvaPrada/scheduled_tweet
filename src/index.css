@@ -38,3 +38,21 @@ button,
 input {
   font-family: 'Montserrat', sans-serif;
 }
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 50%;
+  }
+}

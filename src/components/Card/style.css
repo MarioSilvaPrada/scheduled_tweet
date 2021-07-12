@@ -1,0 +1,43 @@
+.tweet-card {
+  border: 1px solid var(--mainColor);
+  border-radius: var(--borderRadius);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 0.5rem;
+  padding: 0.5rem;
+}
+
+.tweet-card--date {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.tweet-card--date-title {
+  font-size: var(--sizeXS);
+  margin-bottom: 0.5rem;
+}
+
+.tweet-card--date-content {
+  font-size: var(--sizeM);
+}
+
+.tweet-card--right {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-card--date-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-card--date-icons > svg:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.tweet-card--date-icons > svg {
+  cursor: pointer;
+}
