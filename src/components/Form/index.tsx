@@ -36,6 +36,8 @@ const Form: FC<IProps> = ({
     const MDate = M(data.date);
     const MTime = M(`${now} ${data.time}`);
 
+    const isFuture = M.duration(M(`${data.date}, ${data.time}`).diff(M())).asHours() > 0;
+
     const errorObj = { ...error };
 
     // initialize error every time it runs
@@ -52,6 +54,9 @@ const Form: FC<IProps> = ({
     } else {
       if (!MDate.isValid()) {
         errorObj.date = 'Please enter a valid date';
+      }
+      if (!isFuture) {
+        errorObj.date = 'Date & Time must not be in the past';
       }
     }
 
